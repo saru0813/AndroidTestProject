@@ -1,0 +1,687 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xyz.saru.customcalendar.MyCalendar.MyCalendarFragment">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/month_prev"
+            android:id="@+id/month_prev"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/month_select"
+            android:id="@+id/month_select"
+            android:background="#ffffff"
+            android:layout_weight="3"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/month_next"
+            android:id="@+id/month_next"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/week_line_0">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/week_sun"
+                    android:id="@+id/tv_week_0"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/week_mon"
+                    android:id="@+id/tv_week_1"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/week_tue"
+                    android:id="@+id/tv_week_2"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/week_wed"
+                    android:id="@+id/tv_week_3"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/week_thu"
+                    android:id="@+id/tv_week_4"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/week_fri"
+                    android:id="@+id/tv_week_5"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/week_sat"
+                    android:id="@+id/tv_week_6"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/week_line_1">
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate11"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate12"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate13"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate14"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate15"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate16"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate17"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/week_line_2">
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate18"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate19"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate20"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate21"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate22"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate23"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate24"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/week_line_3">
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate25"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate26"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate27"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate28"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate29"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate30"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate31"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/week_line_4">
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate32"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate33"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate34"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate35"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate36"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate37"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate38"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/week_line_5">
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate39"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate40"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate41"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate42"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate43"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate44"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate45"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/week_line_6">
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate46"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate47"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate48"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate49"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate50"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate51"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+
+                <xyz.saru.customcalendar.MyCalendar.MyCalendarDate
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/day_default"
+                    android:id="@+id/xyz.saru.myapplication.MyCalendar.MyCalendarDate52"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/datePicker"
+            android:calendarViewShown="false"
+            android:layout_gravity="center_horizontal" />
+
+    </FrameLayout>
+
+</LinearLayout>
